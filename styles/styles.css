@@ -1,0 +1,36 @@
+.body{
+    position: relative;
+}
+
+.content-container{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    width: inherit;
+}
+
+.scroll-container{
+    margin-top: 20px;
+    height: 800px;
+    width: inherit;
+    overflow-y: scroll;
+}
+
+.serviceDiv{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    height: inherit;
+    align-items: center;
+    text-align: center;
+}
+
+.memberDiv{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    height: inherit;
+    align-items: center;
+    text-align: center;
+}
