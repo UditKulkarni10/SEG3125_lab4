@@ -18,7 +18,7 @@
             <!-- navbar code is adapted from https://getbootstrap.com/docs/4.0/components/scrollspy/ -->
 
             <nav id="top-navbar" class="navbar navbar-light fixed-top" style="background-color: lavender; width: auto;">
-                <a class="navbar-brand" href="#">Company Name + logo?</a>
+                <a class="navbar-brand" href="#">UO Cuts</a>
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                     <a class="nav-link" href="#s1">Home</a>
@@ -39,16 +39,68 @@
             </nav>
             
             <div id="s1" class="content-container" style="margin-top: 50px;">
-                <h4>Welcome to .....</h4>
-                <!-- add caraousel of pictures related to business? -->
+                <h4>Welcome to UO Cuts!</h4>
+                <!-- Carousel code adapted from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp -->
+				<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#imageCarousel" data-slide-to="1"</li>
+						<li data-target="#imageCarousel" data-slide-to="2"</li>
+						<li data-target="#imageCarousel" data-slide-to="3"</li>
+						<li data-target="#imageCarousel" data-slide-to="4"</li>
+					</ul>
+					<div class="carousel-inner">
+						<div class= "carousel-item active">
+							<div class="d-flex justify-content-center">
+								<img src ="./assets/360_F_186869110_FzLZw2DuauSARxk189hX0KT8A1jFcHmh.jpg" width="1000" height="500">
+							</div>
+						</div>
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/h-and-co-hair-salon-salon-interior.jpg" width ="1000" height="500">
+							</div>
+						</div>
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/photo-1562322140-8baeececf3df.jpg" width ="1000" height="500">
+							</div>
+						</div>						
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/12-long-shaggy-bob-haircut-B56DTa0BthM.jpg" width ="500" height="500">
+							</div>
+						</div>
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/best-short-haircuts-for-men-1.jpg" width ="500" height="500">
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#imageCarousel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#imageCarousel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
             </div>
             <div id="s2" class="content-container">
                 <h4>Location</h4>
                 <div class="row">
-                    <div class="col-sm-8" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Map</div>
-                    <div class="col-sm-4" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Store hours</div>
+					<iframe width="700" height="500" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJK5TUxgcFzkwRFzelEm71Igg&key=AIzaSyA9s689pR-VQQU_1MXHajx7yr6k18sXSu8"></iframe>
+                    <div class="col-sm-4" style="background-color: aliceblue; height: 500px; border: 1px solid black;">
+						<br>
+						<h5>Store Hours:</h5><br>
+						<p>Monday: 11:30AM - 8:00PM</p><br>
+						<p>Tuesday: 11:30AM - 8:00PM</p><br>
+						<p>Wednesday: 11:30AM - 8:00PM</p><br>
+						<p>Thursday: 11:30AM - 8:00PM</p><br>
+						<p>Friday: 11:30AM - 8:00PM</p><br>
+						<p>Saturday: 1:00PM - 8:00PM</p><br>
+						<p>Sunday: Closed</p>
+					</div>
                 </div>
-                <!-- add an interactive google map element -->
+
             </div>
             <div id="s3" class="content-container">
                 <h4>Pricing</h4>
@@ -56,52 +108,46 @@
                 <div class="row">
                     <div class="col-sm-4" style="background-color: aliceblue;border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>image/icon for service</p> 
-                            <h5>service 1</h5> 
-                            <p>Description of service</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/1024px-Scissors_icon_black.svg.png" width="50" length="50">
+                            <h5>Hair Cuts</h5> 
+                            <h4>$25</h4>
                         </div>
                     </div>
                     <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>add image/icon</p> 
-                            <h5>service 2</h5>
-                            <p> add description for service</p> 
-                            <h4>$$$</h4>
+                            <img src="./assets/279-2792193_comb-svg-hair-icon-long-hair-icon-png.png" width="50" length="50">
+                            <h5>Hair Styling</h5>
+                            <h4>$15</h4>
                         </div>
                     </div>
                     <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>add image/icon</p> 
-                            <h5>service 3</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/542-5420733_hair-color-hair-dye-clipart-transparent-png-download.png" width="50" length="50">
+                            <h5>Hair Colouring</h5> 
+                            <h4>$20</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 4</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/352791-200.png" width="50" length="50">
+                            <h5>Beard Styling</h5> 
+                            <h4>$10</h4>
                         </div>
                     </div>
                     <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 5</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/1370074-200.png" width="50" length="50">
+                            <h5>Perm</h5> 
+                            <h4>$30</h4>
                         </div>
                     </div>
                     <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 6</h5> 
-                            <p>add description </p>
-                            <h4>$$$</h4>
+                            <img src="./assets/1530757-200.png" width="50" length="50">
+                            <h5>Hair Treatments</h5> 
+                            <h4>$30</h4>
                         </div>
                     </div>
                 </div>
@@ -115,7 +161,7 @@
                         <div class="row">
                             <div class="col-sm-4"> 
                                 <div class="memberDiv">
-                                    <h5>image</h5> 
+                                    <img src="./assets/111-1114883_person-icons-face-older-person-icon-hd-png.png" width="100" length="200">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
@@ -131,7 +177,7 @@
                         <div class="row">
                             <div class="col-sm-4"> 
                                 <div class="memberDiv">
-                                    <h5>image</h5> 
+                                    <img src="./assets/images (1).jpg" width="100" length="200">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
@@ -148,7 +194,7 @@
                         <div class="row">
                             <div class="col-sm-4"> 
                                 <div class="memberDiv">
-                                    <h5>image</h5> 
+                                    <img src="./assets/images.png" width="100" length="200">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
@@ -163,7 +209,7 @@
                         <div class="row">
                             <div class="col-sm-4"> 
                                 <div class="memberDiv">
-                                    <h5>image</h5> 
+                                    <img src="./assets/images.jpg" width="100" length="200">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
