@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1, height= device-height">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body data-spy="scroll" data-target="#top-navbar" data-offset="60" >
+        <div class="container">
+            
+            <!-- navbar code is adapted from https://getbootstrap.com/docs/4.0/components/scrollspy/ -->
+
+            <nav id="top-navbar" class="navbar navbar-light fixed-top" style="background-color: lavender; width: auto;">
+                <a class="navbar-brand" href="#">Company Name + logo?</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#s1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#s2">Location</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#s3">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#s4">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#s5">Book</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="s1" class="content-container" style="margin-top: 50px;">
+                <h4>Welcome to .....</h4>
+                <!-- add caraousel of pictures related to business? -->
+            </div>
+            <div id="s2" class="content-container">
+                <h4>Location</h4>
+                <div class="row">
+                    <div class="col-sm-8" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Map</div>
+                    <div class="col-sm-4" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Store hours</div>
+                </div>
+                <!-- add an interactive google map element -->
+            </div>
+            <div id="s3" class="content-container">
+                <h4>Pricing</h4>
+                <!-- change all grid colour to white -->
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: aliceblue;border: 1px solid black; ">
+                        <div class="serviceDiv">
+                            <p>image/icon for service</p> 
+                            <h5>service 1</h5> 
+                            <p>Description of service</p>
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
+                        <div class="serviceDiv">
+                            <p>add image/icon</p> 
+                            <h5>service 2</h5>
+                            <p> add description for service</p> 
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
+                        <div class="serviceDiv">
+                            <p>add image/icon</p> 
+                            <h5>service 3</h5> 
+                            <p>add description</p>
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="serviceDiv"> 
+                            <p>add image/icon</p>
+                            <h5>service 4</h5> 
+                            <p>add description</p>
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="serviceDiv"> 
+                            <p>add image/icon</p>
+                            <h5>service 5</h5> 
+                            <p>add description</p>
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="serviceDiv"> 
+                            <p>add image/icon</p>
+                            <h5>service 6</h5> 
+                            <p>add description </p>
+                            <h4>$$$</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- add 2x3 grid containing 6 services with related prices -->
+            </div>
+            <div id="s4" class="content-container">
+                <h4>Meet the Team</h4>
+                <!-- add 2x2 grid containing staff picture, name, accomplishments/skills/specialities -->
+                <div class="row">
+                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="row">
+                            <div class="col-sm-4"> 
+                                <div class="memberDiv">
+                                    <h5>image</h5> 
+                                </div>
+                            </div>
+                            <div class="col-sm-8"> 
+                                <div class="memberDiv">
+                                    <h5>Team Member 1</h5>
+                                    <p>Description about team member</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="row">
+                            <div class="col-sm-4"> 
+                                <div class="memberDiv">
+                                    <h5>image</h5> 
+                                </div>
+                            </div>
+                            <div class="col-sm-8"> 
+                                <div class="memberDiv">
+                                    <h5>Team Member 2</h5>
+                                    <p>Description about team member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="row">
+                            <div class="col-sm-4"> 
+                                <div class="memberDiv">
+                                    <h5>image</h5> 
+                                </div>
+                            </div>
+                            <div class="col-sm-8"> 
+                                <div class="memberDiv">
+                                    <h5>Team Member 3</h5>
+                                    <p>Description about team member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                        <div class="row">
+                            <div class="col-sm-4"> 
+                                <div class="memberDiv">
+                                    <h5>image</h5> 
+                                </div>
+                            </div>
+                            <div class="col-sm-8"> 
+                                <div class="memberDiv">
+                                    <h5>Team Member 4</h5>
+                                    <p>Description about team member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="s5" class="content-container">
+
+                <h4>Book an Appointment</h4>
+                <br>
+                <!-- add form input such as email, date, service and employee -->
+                <!-- Input and form code adapted from https://getbootstrap.com/docs/4.0/components/forms/ -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h5>Personal Information</h5>
+                        <br>
+                        <form>
+                            <div class="form-group">
+                                <label for="fnameInput">First name:</label>
+                                <input type="text" class="form-control" id="fnameInput" placeholder="Enter first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lnameInput">Last name:</label>
+                                <input type="text" class="form-control" id="lnameInput" placeholder="Enter last name">
+                            </div>
+                            <div class="form-group">                                
+                                <label for="emailInput">Email</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <h5>Service and Date</h5>
+                        <br>
+                        <div class="form-group">
+                            <label for="serviceSelect">Select the service</label>
+                            <select class="form-control" id="serviceSelect">
+                              <option>service 1</option>
+                              <option>service 2</option>
+                              <option>service 3</option>
+                              <option>service 4</option>
+                              <option>service 5</option>
+                              <option>service 6</option>
+
+                            </select>
+                          </div>
+                    </div> 
+                </div>
+                <br>
+                <div style="text-align: center;"> 
+                    <button class="btn btn-light btn-lg">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>Website Designed By Jai Chauhan, Jonathan Lam, Udit Kulkarni, Caleb Wong</p>
+        </div>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
