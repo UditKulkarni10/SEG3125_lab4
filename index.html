@@ -10,6 +10,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
 
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lobster&display=swap" rel="stylesheet">
+
     </head>
 
     <body data-spy="scroll" data-target="#top-navbar" data-offset="60" >
@@ -17,8 +21,10 @@
             
             <!-- navbar code is adapted from https://getbootstrap.com/docs/4.0/components/scrollspy/ -->
 
-            <nav id="top-navbar" class="navbar navbar-light fixed-top" style="background-color: lavender; width: auto;">
-                <a class="navbar-brand" href="#">Company Name + logo?</a>
+            <nav id="top-navbar" class="navbar navbar-light fixed-top" style="background-color: black; width: auto;">
+                <a class="navbar-brand" href="#">
+                	<img src="assets/logo2.jpeg" alt="">
+                </a>
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                     <a class="nav-link" href="#s1">Home</a>
@@ -39,143 +45,181 @@
             </nav>
             
             <div id="s1" class="content-container" style="margin-top: 50px;">
-                <h4>Welcome to .....</h4>
-                <!-- add caraousel of pictures related to business? -->
+                <h4>Welcome to Basement Barbers!</h4>
+                <p>We are a barbershop located inside the University of Ottawa</p>
+                <!-- Carousel code adapted from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp -->
+				<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+					<ul class="carousel-indicators">
+						<li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#imageCarousel" data-slide-to="1"</li>
+						<li data-target="#imageCarousel" data-slide-to="2"</li>
+					</ul>
+					<div class="carousel-inner">
+						<div class= "carousel-item active">
+							<div class="d-flex justify-content-center">
+								<img src ="./assets/slide-1.jpeg" width="1300" height="500">
+							</div>
+						</div>
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/slide-2.jpeg" width ="1300" height="500">
+							</div>
+						</div>
+						<div class= "carousel-item">
+							<div class="d-flex justify-content-center">
+								<img src="./assets/slide-3.jpeg" width ="1300" height="500">
+							</div>
+						</div>						
+					</div>
+					<a class="carousel-control-prev" href="#imageCarousel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#imageCarousel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
             </div>
             <div id="s2" class="content-container">
                 <h4>Location</h4>
+                <br>
                 <div class="row">
-                    <div class="col-sm-8" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Map</div>
-                    <div class="col-sm-4" style="background-color: aliceblue; height: 500px; border: 1px solid black;">Insert Store hours</div>
+					<iframe width="700" height="500" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJK5TUxgcFzkwRFzelEm71Igg&key=AIzaSyA9s689pR-VQQU_1MXHajx7yr6k18sXSu8"></iframe>
+                    <div class="col-sm-4" style="background-color: black; height: 500px; border: 1px solid black;">
+						<br>
+						<h5>Store Hours:</h5><br>
+						<p>Monday: 11:30AM - 8:00PM</p><br>
+						<p>Tuesday: 11:30AM - 8:00PM</p><br>
+						<p>Wednesday: 11:30AM - 8:00PM</p><br>
+						<p>Thursday: 11:30AM - 8:00PM</p><br>
+						<p>Friday: 11:30AM - 8:00PM</p><br>
+						<p>Saturday: 1:00PM - 8:00PM</p><br>
+						<p>Sunday: Closed</p>
+					</div>
                 </div>
-                <!-- add an interactive google map element -->
+
             </div>
             <div id="s3" class="content-container">
                 <h4>Pricing</h4>
+                <br>
                 <!-- change all grid colour to white -->
                 <div class="row">
-                    <div class="col-sm-4" style="background-color: aliceblue;border: 1px solid black; ">
+                    <div class="col-sm-4" style="background-color: black;border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>image/icon for service</p> 
-                            <h5>service 1</h5> 
-                            <p>Description of service</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/scissors.jpeg" width="50" length="50">
+                            <h5>Hair Cuts</h5> 
+                            <h4>$25</h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
+                    <div class="col-sm-4" style="background-color: black; border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>add image/icon</p> 
-                            <h5>service 2</h5>
-                            <p> add description for service</p> 
-                            <h4>$$$</h4>
+                            <img src="./assets/hair-styling.jpeg" width="50" length="50">
+                            <h5>Hair Styling</h5>
+                            <h4>$15</h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black; ">
+                    <div class="col-sm-4" style="background-color: black; border: 1px solid black; ">
                         <div class="serviceDiv">
-                            <p>add image/icon</p> 
-                            <h5>service 3</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/hair-colour.jpeg" width="50" length="50">
+                            <h5>Hair Colouring</h5> 
+                            <h4>$20</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-4" style="background-color: black; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 4</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/beard.jpeg" width="50" length="50">
+                            <h5>Beard Styling</h5> 
+                            <h4>$10</h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-4" style="background-color: black; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 5</h5> 
-                            <p>add description</p>
-                            <h4>$$$</h4>
+                            <img src="./assets/perm.jpeg" width="50" length="50">
+                            <h5>Perm</h5> 
+                            <h4>$30</h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-4" style="background-color: black; border: 1px solid black;">
                         <div class="serviceDiv"> 
-                            <p>add image/icon</p>
-                            <h5>service 6</h5> 
-                            <p>add description </p>
-                            <h4>$$$</h4>
+                            <img src="./assets/hair-treatments.jpeg" width="50" length="50">
+                            <h5>Hair Treatments</h5> 
+                            <h4>$30</h4>
                         </div>
                     </div>
                 </div>
                 <!-- add 2x3 grid containing 6 services with related prices -->
             </div>
             <div id="s4" class="content-container">
-                <h4>Meet the Team</h4>
-                <!-- add 2x2 grid containing staff picture, name, accomplishments/skills/specialities -->
-                <div class="row">
-                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+            	<h4>Our Team</h4>
+            	<br>
+            <div class="row">
+                    <div class="col-sm-6" style="background-color: black; border: 1px solid black;">
                         <div class="row">
                             <div class="col-sm-4"> 
-                                <div class="memberDiv">
-                                    <h5>image</h5> 
+                                <div id="profile" class="memberDiv">
+                                    <img src="assets/jai.jpeg" alt="" width="100" length="100">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
                                 <div class="memberDiv">
-                                    <h5>Team Member 1</h5>
-                                    <p>Description about team member</p>
+                                    <h5>Jai Chauhan</h5>
+                                    <p>A co-owner of Basement Barbers, Jai honed his skills in LA as an actor, secretly cutting hair for well-known celebrities. Today he cuts hair in a basement, in Ottawa.</p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-6" style="background-color: black; border: 1px solid black;">
                         <div class="row">
                             <div class="col-sm-4"> 
-                                <div class="memberDiv">
-                                    <h5>image</h5> 
+                                <div id="profile" class="memberDiv">
+                                    <img src="assets/jon.jpeg" alt="" width="100" length="100">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
                                 <div class="memberDiv">
-                                    <h5>Team Member 2</h5>
-                                    <p>Description about team member</p>
+                                    <h5>Jonathan Lam</h5>
+                                    <p>AKA Sensei J, self-taught barber, well known on social media for his haircut tutorials, clean cuts and bird cosplays. Check him out at @senseiJ on Instagram and Youtube.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-6" style="background-color: black; border: 1px solid black;">
                         <div class="row">
                             <div class="col-sm-4"> 
-                                <div class="memberDiv">
-                                    <h5>image</h5> 
+                                <div id="profile" class="memberDiv">
+                                    <img src="assets/udit.jpeg" alt="" width="100" length="100">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
                                 <div class="memberDiv">
-                                    <h5>Team Member 3</h5>
-                                    <p>Description about team member</p>
+                                    <h5>Udit Kulkarni</h5>
+                                    <p>A co-owner of Basement Barbers, Udit has no arms and legs but makes it work. Good luck booking him, this man is fully booked for the next year.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6" style="background-color: aliceblue; border: 1px solid black;">
+                    <div class="col-sm-6" style="background-color: black; border: 1px solid black;">
                         <div class="row">
                             <div class="col-sm-4"> 
-                                <div class="memberDiv">
-                                    <h5>image</h5> 
+                                <div id="profile" class="memberDiv">
+                                    <img src="assets/caleb.jpeg" alt="" width="100" length="100">
                                 </div>
                             </div>
                             <div class="col-sm-8"> 
                                 <div class="memberDiv">
-                                    <h5>Team Member 4</h5>
-                                    <p>Description about team member</p>
+                                    <h5>Caleb Wong</h5>
+                                    <p>Looks like a baby, is a baby. Caleb is the baby of the crew. A barber trainee, learning from the best in Ottawa. Cut him some slack when he messes up your hair.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
             <div id="s5" class="content-container">
 
                 <h4>Book an Appointment</h4>
@@ -208,15 +252,24 @@
                         <div class="form-group">
                             <label for="serviceSelect">Select the service</label>
                             <select class="form-control" id="serviceSelect">
-                              <option>service 1</option>
-                              <option>service 2</option>
-                              <option>service 3</option>
-                              <option>service 4</option>
-                              <option>service 5</option>
-                              <option>service 6</option>
+                              <option>Hair Cut</option>
+                              <option>Hair Styling</option>
+                              <option>Hair Colouring</option>
+                              <option>Beard Styling</option>
+                              <option>Perm</option>
+                              <option>Hair Treatments</option>
 
                             </select>
                           </div>
+                        <div class="form-group">
+                            <br>
+                            <label for="date">Select a Date: </label>
+                            <input type="date" id="date" name="booking" min="2022-01-01" max="2022-12-31">
+                        </div>
+                        <div class="form-group">
+                            <label for="appt">Select a time:</label>
+                            <input type="time" id="appt" name="appt" min="9:00" max="18:00" required>
+                        </div>
                     </div> 
                 </div>
                 <br>
